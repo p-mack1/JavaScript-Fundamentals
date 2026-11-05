@@ -11,3 +11,23 @@ completedLessons = completedLessons + 1;
 const profile = document.querySelector("#profile");
 profile.textContent = studentName + " completed " + completedLessons + " lessons.";
 console.log(typeof studentName, typeof completedLessons, typeof isLearning);
+
+let points = 0;
+const pointsText = document.querySelector("#pointsText");
+const pointsBtn = document.querySelector("#pointsBtn");
+function earnPoints() {
+    points+= 5;
+    pointsText.textContent = "Points: " + points;
+}
+pointsBtn.addEventListener("click", earnPoints);
+
+const firstNum = document.querySelector("#firstNum");
+const secondNum = document.querySelector("#secondNum");
+const addBtn = document.querySelector("#addBtn");
+const sumText = document.querySelector("#sumText");
+function addNumbers() {
+    const a = Number(firstNum.value);
+    const b = Number(secondNum.value);
+    sumText.textContent = "Total: " + (a + b);
+}
+addBtn.addEventListener("click", addNumbers);

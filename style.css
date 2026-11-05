@@ -26,3 +26,18 @@ input {
     padding: 9px;
     max-width: 100%;
 }
+
+#pointsText {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#pointsBtn {
+    background: #d4edff;
+    border: 1px solid #8abce0;
+}
+
+#firstNum, #secondNum {
+    width: 85px;
+    margin: 5px;
+}
