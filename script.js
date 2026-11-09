@@ -31,3 +31,16 @@ function addNumbers() {
     sumText.textContent = "Total: " + (a + b);
 }
 addBtn.addEventListener("click", addNumbers);
+
+const scoreInput = document.querySelector("#scoreInput");
+const checkBtn = document.querySelector("#checkBtn");
+const scoreResult = document.querySelector("#scoreResult");
+function checkScore() {
+    const score = Number(scoreInput.value);
+    if (score >= 70) {
+        scoreResult.textContent = "Pass";
+    } else {
+        scoreResult.textContent = "Keep practicing";
+    }
+}
+checkBtn.addEventListener("click", checkScore);

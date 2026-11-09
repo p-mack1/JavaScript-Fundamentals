@@ -41,3 +41,7 @@ input {
     width: 85px;
     margin: 5px;
 }
+
+#scoreResult {
+    font-weight: bold;
+}
