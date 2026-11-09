@@ -44,3 +44,15 @@ function checkScore() {
     }
 }
 checkBtn.addEventListener("click", checkScore);
+
+const nameInput = document.querySelector("#nameInput");
+const greetBtn = document.querySelector("#greetBtn");
+const greetingText = document.querySelector("#greetingText");
+function makeGreeting(name) {
+    return "Welcome to JavaScript, " + name + "!";
+}
+function showGreeting() {
+    const name = nameInput.value.trim;
+    greetingText.textContent = makeGreeting(name);
+}
+greetBtn.addEventListener("click", showGreeting);
