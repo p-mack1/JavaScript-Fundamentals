@@ -56,3 +56,16 @@ function showGreeting() {
     greetingText.textContent = makeGreeting(name);
 }
 greetBtn.addEventListener("click", showGreeting);
+
+const skills = ["HTML", "CSS", "JavaScript"];
+const skillsBtn = document.querySelector("#skillsBtn");
+const skillsList = document.querySelector("#skillsList");
+function showSkills() {
+    skillsList.innerHTML = "";
+    for (let i = 0; 1 < skills.length; i++) {
+        const item = document.createElement("li");
+        item.textContent = skills[i];
+        skillsList.appendChild(item);
+    }
+}
+skillsBtn.addEventListener("click", showSkills);

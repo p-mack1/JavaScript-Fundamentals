@@ -45,3 +45,7 @@ input {
 #scoreResult {
     font-weight: bold;
 }
+
+#skillsList li {
+    margin: 6px 0;
+}
